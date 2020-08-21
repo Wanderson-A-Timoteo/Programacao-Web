@@ -1,0 +1,32 @@
+body {
+    background-color: aquamarine;
+}
+
+#subtitle {
+    color: blue;
+}
+
+.paragrafos {
+    background-color: burlywood;
+    color: dimgray;
+}
+
+#sublista {
+    color: firebrick;
+}
+
+.lista {
+    background-color: lightslategrey;
+    color: orange;
+}
+
+.tabelas {
+    background-color: pink;
+    color: purple;
+}
+
+p {
+    text-justify: auto;
+    color: red;
+
+}
