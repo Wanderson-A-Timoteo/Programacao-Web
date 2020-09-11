@@ -1,0 +1,31 @@
+html, body {
+	height: calc(100% - 10px);
+}
+
+div {
+	border: 1px solid #000;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 15% 60% 25%;
+	min-height: 100%;
+	grid-template-rows: 150px auto 80px;
+	
+}
+
+.col-left {
+	background-color: #89ffb6;
+	grid-row-start: 2;
+	grid-row-end:   4;
+}
+
+.header {
+	grid-column-start: 1;
+	grid-column-end:   4; 
+}
+
+.footer {
+	grid-column: 2 / 4; 
+}
+	
