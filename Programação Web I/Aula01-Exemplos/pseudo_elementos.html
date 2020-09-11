@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Pseudo Elementos</title>
+		<style>
+		
+			body {
+				counter-reset: par;
+			}
+		
+			p::first-letter {
+				font-size: 22px;
+				font-weight: bold;
+				color: blue;
+			}
+			
+			p::first-line {
+				text-decoration: underline;
+			}
+			
+			p::before {
+				/*content: ">";*/
+				counter-increment: par;
+				content: counter(par);
+				
+			}
+			
+			p::after {
+				content: attr(data-par);
+				font-size: 22px;
+				color: red;
+			}
+			
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<p id="" class="" data-par="valor1">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum est non ipsum maximus, sed mollis nunc mattis. Nulla facilisi. Donec id turpis ligula. Quisque ac consectetur metus. Proin scelerisque nunc et nisl lobortis, et gravida tortor pulvinar. Phasellus eget ligula dolor. Ut nisi nunc, tempor id neque in, dignissim consequat libero. Ut ac rutrum mi. Sed scelerisque feugiat lacus molestie tempus. Aenean sit amet aliquam nunc. Pellentesque nec orci dolor. Quisque sed neque nunc. Nullam commodo malesuada ante gravida pellentesque. Mauris nulla est, ultrices nec tristique at, ultrices sit amet purus. Nam ac tellus mattis, venenatis arcu vel, rhoncus ex. Suspendisse et vestibulum tortor.
+		</p>
+		<p data-par="valor2">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum est non ipsum maximus, sed mollis nunc mattis. Nulla facilisi. Donec id turpis ligula. Quisque ac consectetur metus. Proin scelerisque nunc et nisl lobortis, et gravida tortor pulvinar. Phasellus eget ligula dolor. Ut nisi nunc, tempor id neque in, dignissim consequat libero. Ut ac rutrum mi. Sed scelerisque feugiat lacus molestie tempus. Aenean sit amet aliquam nunc. Pellentesque nec orci dolor. Quisque sed neque nunc. Nullam commodo malesuada ante gravida pellentesque. Mauris nulla est, ultrices nec tristique at, ultrices sit amet purus. Nam ac tellus mattis, venenatis arcu vel, rhoncus ex. Suspendisse et vestibulum tortor.
+		</p>
+		<p data-par="valor3">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum est non ipsum maximus, sed mollis nunc mattis. Nulla facilisi. Donec id turpis ligula. Quisque ac consectetur metus. Proin scelerisque nunc et nisl lobortis, et gravida tortor pulvinar. Phasellus eget ligula dolor. Ut nisi nunc, tempor id neque in, dignissim consequat libero. Ut ac rutrum mi. Sed scelerisque feugiat lacus molestie tempus. Aenean sit amet aliquam nunc. Pellentesque nec orci dolor. Quisque sed neque nunc. Nullam commodo malesuada ante gravida pellentesque. Mauris nulla est, ultrices nec tristique at, ultrices sit amet purus. Nam ac tellus mattis, venenatis arcu vel, rhoncus ex. Suspendisse et vestibulum tortor.
+		</p>		
+	</body>
+</html>
