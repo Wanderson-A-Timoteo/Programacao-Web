@@ -1,13 +1,41 @@
+body {
+    background-image: url("img-body.jpg");
+}
+
 fieldset {
     background-color: #a6c0e7;
-  }
-  
-  legend {
+    background-image: url("img-cadastro.jpg");
+}
+
+fieldset legend {
+    background-color: rgb(182, 106, 62);
+    padding: 5px 10px;
+}
+
+fieldset legend::first-line {
+    color:white;
+    
+}
+
+#span-hobby::selection {
+    color: red;
+    background: yellow;
+}
+
+input {
+    margin: 5px;
+}
+
+button {
     background-color: rgb(182, 106, 62);
     color: white;
     padding: 5px 10px;
-  }
-  
-  input {
-    margin: 5px;
-  }
+}
+
+#cadastrar:hover {
+      background-color:green;
+}
+
+#cancelar:hover{
+    background-color:red;
+}

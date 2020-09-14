@@ -36,6 +36,38 @@
                 <label for="sexo-masc"> Masculino </label>
                 <input type="radio" id="sexo-femi" name="sexo"> &nbsp;
                 <label for="sexo-femi"> Feminino </label>
+                <input type="radio" id="sexo-bin" name="sexo"> &nbsp;
+                <label for="sexo-bin"> Binário </label>
+                <br>
+                <span id="span-hobby">Qual é o seu passatempo (Poderá selecionar mais de 1 item)</span>
+                <br>
+                <input type="checkbox" id="futebol" name="futebol">
+                <label for="futebol">Futebol</label>
+                <input type="checkbox" id="ler" name="ler">
+                <label for="ler">Ler</label>
+                <input type="checkbox" id="tv" name="tv">
+                <label for="tv">Asistir TV</label>
+                <input type="checkbox" id="game" name="game">
+                <label for="game">Jogar Vídeo Game</label>
+                <br>
+                <label for="estado"> Estado </label>
+                <select name="estado" id="estado">
+                    <optgroup>
+                        <option value="AC">Acre</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                </select>
+                <label for="estado"> Cidade </label>
+                <select name="estado" id="estado">
+                    <optgroup>
+                        <option value="RB">Rio Branco</option>
+                        <option value="CBA">Cuiabá</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="FLA">Flamengo</option>
+                    </optgroup>
+                </select>
                 <br>
                 <label for="txt-comentario"> Comentários: </label>
                 <br>
@@ -43,7 +75,8 @@
                     
                 </textarea> 
                 <br>
-                <button type="submit">Cadastrar</button>
+                <button type="submit" id="cadastrar">Cadastrar</button>
+                <button type="reset" id="cancelar">Cancelar</button>
             </fieldset>
         </form>
     
