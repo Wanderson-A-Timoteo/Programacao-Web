@@ -1,10 +1,14 @@
 body {
     background-image: url("img-body.jpg");
+    background-attachment: fixed;
+
 }
 
 fieldset {
     background-color: #a6c0e7;
     background-image: url("img-cadastro.jpg");
+    background-attachment: fixed;
+    background-repeat: unset;
 }
 
 fieldset legend {
