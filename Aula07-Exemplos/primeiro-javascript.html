@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução JavaScript</title>
+	
+	<script>
+		alert('Olá Mundo');
+		
+		var a = 10;
+		a = "s";
+		
+		var b = parseInt(prompt("Digite o valor de B"));
+		var c = parseInt(prompt("Digite o valor de C"));
+		var d = b+c;
+		
+		document.write("O resultado de B + C é: "+d);
+		
+		var idade = prompt("Qual a sua idade?");
+		
+		if (idade < 18) {
+			alert("Você não pode visitar esta página!");
+		}
+		
+		//comentário de uma linha
+		/*
+			comentário de multiplas linhas
+		*/
+		var joao = { 
+					nome    : "João Silva", 
+					idade   : "21",
+					estudar : function() { 
+								return this.nome+" é muito estudioso!"; 
+							}
+					
+				   };
+		
+		alert(joao.idade);
+		
+		document.write("<br />"+joao.estudar());
+		
+		
+		
+	</script>
+	
+</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulando DOM</title>
+	
+	<style>
+		p {
+			background-color: green;
+			color: white;
+			font-size: 22px;
+		}
+	</style>
+	
+	<script>
+	
+		var tamanho_atual = 22;
+	
+		function mudarCor() {
+			//paragrafo.style.backgroundColor = "";
+			var par = document.getElementById('paragrafo');
+			par.style.backgroundColor = "red";
+			
+			//getElementsByTagName() retorna um array e não um único elemento
+			var elem_cor = document.getElementsByTagName("input");
+			var cor = elem_cor[0].value;
+			
+			par.style.color = cor;
+			
+		}
+		
+		function aumentarFonte() {
+			var tamanho_fonte = 
+window.getComputedStyle(document.getElementById('paragrafo')).getPropertyValue("font-size");
+			   //document.getElementById('paragrafo').style.fontSize;
+			 
+			console.log("Tamanho fonte: "+tamanho_fonte);
+			 
+			tamanho_atual = tamanho_atual+1;
+			var par = document.getElementById('paragrafo');
+			par.style.fontSize = tamanho_atual+'px';
+		
+		}
+		
+	</script>
+	
+	
+</head>
+	<body>
+		<p id="paragrafo">Lorem Ipsum</p>
+		<button onclick="mudarCor();">Mudar Cor</button>
+		<br /><input type="color" />
+		<br /><button onclick="aumentarFonte();">[+]</button>
+		
+		
+	</body>
+</html>

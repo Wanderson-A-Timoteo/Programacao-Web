@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula 7 - Grids</title>
+        <meta charset="utf-8">
+        <style>
+		
+			html, body {
+				height: 100%;
+			}
+        
+        	header,main,section,footer {
+        		border: 1px solid #000;
+        	}
+        
+        	.container {
+		   		display: grid;
+				grid-template-columns: 0.3fr 2fr 0.2fr;
+				grid-auto-rows: 15%;
+				min-height: 100%;
+				justify-content: stretch;
+			}	
+			
+			.container > header {
+				grid-column-start: 1;
+				grid-column-end: 4;
+			}
+			
+			.container > header h1 {
+				text-align: center;
+			}
+			
+			.container > section.col-left {
+				grid-row-start: 2;
+				grid-row-end: 5;
+				
+			}
+			
+			.container > main {
+				grid-row-start: 2;
+				grid-row-end: 5;			
+			}
+			
+			.container > section.col-right {
+				grid-row-start: 2;
+				grid-row-end: 5;	
+			}
+			
+			.container > footer {
+				grid-column-start: 1;
+				grid-column-end: 4;				
+			}
+			
+			ul#temas-leitura {
+				
+			}
+			
+        </style>
+    </head>
+    <body>
+		<div class="container">
+			<header>
+				<h1>Lorem Ipsum</h1>
+			</header>
+			<section class="col-left">
+				<nav>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</nav>
+			</section>
+			<main class="col-main">
+				<div>
+					<ul id="temas-leitura">
+						<li>A</li>
+						<li>A</li>
+						<li>A</li>
+						<li>A</li>
+					</ul>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus nunc velit, nec accumsan odio pulvinar nec. Nunc rutrum posuere placerat. Vivamus efficitur at purus id venenatis. Duis quis eros purus. Duis quis leo et ligula iaculis mattis vel quis nunc. Praesent et leo erat. Curabitur gravida sodales consequat. Phasellus imperdiet ullamcorper enim mollis imperdiet. Aliquam imperdiet dui nisl, nec pharetra orci euismod non.</p>
+				<p>Sed in quam vitae eros varius varius tempus at leo. Etiam porttitor porttitor ligula, non consequat dui luctus a. Duis laoreet sed ligula a feugiat. Ut dolor neque, consectetur quis lorem at, vulputate maximus arcu. Duis egestas sed nisl in sagittis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id tellus a nulla facilisis tincidunt a vel augue.</p>
+				<p>Curabitur laoreet eros quis turpis consequat maximus. Nulla condimentum, lectus non aliquet elementum, odio arcu laoreet mauris, ac tempus mauris orci eget massa. Nam sollicitudin erat vel nulla hendrerit, vitae euismod orci scelerisque. Nunc non placerat purus. Integer id maximus ante. Sed sed diam enim. Vestibulum interdum turpis ut augue euismod, et dapibus urna vehicula. Sed blandit cursus lorem, eu congue nisl posuere posuere. Ut vulputate metus at pulvinar convallis. Phasellus at ex a lacus porttitor sollicitudin eu sit amet massa. Nunc ipsum justo, facilisis id lorem ultricies, tincidunt porttitor est.</p>
+				<p>Nulla in tempor enim. Ut molestie luctus justo in accumsan. Nullam eget tempor augue. Sed tellus tortor, ornare vitae enim sed, malesuada cursus tellus. Praesent urna purus, rhoncus in volutpat sit amet, hendrerit ut nisi. Morbi ullamcorper, quam nec ornare dapibus, ante augue gravida ligula, sed imperdiet purus lorem non leo. Nunc cursus et quam nec tincidunt. Sed vitae sodales eros. In venenatis, dui at fringilla mattis, sem velit semper arcu, a posuere velit metus nec risus. Etiam vitae ligula sed felis volutpat condimentum efficitur quis orci. Maecenas ultricies finibus convallis.</p>
+				<p>Morbi at porttitor orci, ac feugiat nisi. Maecenas nec lacus neque. Sed dictum purus tristique risus efficitur consequat. Nunc id risus vulputate, rutrum diam sed, tincidunt quam. Donec sed felis at sem auctor luctus. Nunc tincidunt libero vel ante euismod, at tempus lacus condimentum. Phasellus eu magna sit amet felis pellentesque cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc enim arcu, tincidunt eu malesuada eu, efficitur quis est. Suspendisse tincidunt augue vel sem eleifend elementum. Etiam pulvinar massa at congue hendrerit. Cras nec sapien tincidunt, convallis erat et, suscipit sapien.</p>
+				<p>Suspendisse potenti. Nunc ullamcorper, magna sed convallis laoreet, nisl metus mattis urna, vitae congue neque ligula vel massa. Etiam sollicitudin bibendum massa, consequat lacinia diam scelerisque eget. Integer condimentum mi at dui auctor fermentum. Cras at mollis eros, ut pharetra libero. Integer suscipit a justo nec ultricies. Fusce tempus imperdiet auctor. Vestibulum hendrerit leo vitae libero feugiat eleifend. Pellentesque placerat augue nisi. Aenean iaculis felis in erat scelerisque, quis laoreet mi faucibus.</p>
+				<p>Vivamus nec congue justo. In id venenatis ante. Phasellus a ligula at lorem iaculis bibendum. In hac habitasse platea dictumst. Nulla in massa elit. In ac justo pretium, venenatis nisl vel, euismod dolor. Donec in tincidunt lacus. Integer ultrices, leo gravida semper laoreet, sem velit pretium ipsum, eget volutpat mauris quam sit amet elit. Ut et dui ac odio varius fringilla. Ut dapibus finibus gravida. Cras mattis, eros ac pulvinar efficitur, diam velit faucibus velit, vel volutpat mauris nisi sed libero. Sed tincidunt accumsan dolor in finibus. Nam faucibus libero ac lacus imperdiet pulvinar. Nunc et odio tincidunt, ultrices turpis blandit, blandit sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p>Cras commodo dignissim felis in maximus. Proin laoreet ante id lectus porttitor, a ultricies justo blandit. Nullam in purus ut elit imperdiet scelerisque. Curabitur dapibus massa luctus sollicitudin pulvinar. Morbi bibendum lectus sit amet accumsan eleifend. Quisque iaculis odio eget ante ultricies, sed vulputate quam congue. Praesent ac scelerisque nisl. Praesent ullamcorper, nisl non blandit tempor, mi sem varius ipsum, a hendrerit mauris mauris eget felis. Sed congue finibus ex, in consectetur tortor auctor non. Nullam condimentum neque nisi, vel suscipit nulla tincidunt vitae.</p>
+			</main>
+			<section class="col-right">4</section>
+			<footer class="footer">5</footer>	
+		</div>
+    </body>
+</html>
